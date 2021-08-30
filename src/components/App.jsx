@@ -15,7 +15,7 @@ export class App extends Component {
 
   counterIncrement = () => {
     this.setState(prevState => ({
-      good: prevState.good + 1,
+      good: prevState.good + 5,
     }));
   };
 
