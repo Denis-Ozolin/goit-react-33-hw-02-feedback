@@ -6,13 +6,15 @@ import { Statistics } from 'components/Statistics/Statistics';
 
 export class App extends Component {
   static defaultProps = {
-    initialValue: 0,
+    initialGoodValue: 0,
+    initialNeutralValue: 0,
+    initialBadValue: 0,
   };
 
   state = {
-    good: this.props.initialValue,
-    neutral: this.props.initialValue,
-    bad: this.props.initialValue,
+    good: this.props.initialGoodValue,
+    neutral: this.props.initialNeutralValue,
+    bad: this.props.initialBadValue,
   };
 
   onLeaveFeedback = event => {
